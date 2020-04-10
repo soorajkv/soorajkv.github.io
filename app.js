@@ -1,28 +1,11 @@
 const data = [
   {
-    name: 'John Doe',
-    age: 32,
-    gender: 'male',
-    lookingfor: 'female',
-    location: 'Boston MA',
-    image: 'https://randomuser.me/api/portraits/men/82.jpg'
-  },
-  {
-    name: 'Jen Smith',
-    age: 26,
-    gender: 'female',
-    lookingfor: 'male',
-    location: 'Miami FL',
-    image: 'https://randomuser.me/api/portraits/women/82.jpg'
-  },
-  {
-    name: 'William Johnson',
-    age: 38,
-    gender: 'male',
-    lookingfor: 'female',
-    location: 'Lynn MA',
-    image: 'https://randomuser.me/api/portraits/men/83.jpg'
-  }
+    name: 'Sooraj KV',
+    profile: 'Developer',
+    skills: 'AEM,Java,Js,React,AWS',
+    location: 'Melbourne Australia',
+    image: 'assets/sooraj.jpg'
+  
 ];
 
 const profiles = profileIterator(data);
@@ -41,9 +24,9 @@ function nextProfile() {
     document.getElementById('profileDisplay').innerHTML = `
       <ul class="list-group">
         <li class="list-group-item">Name: ${currentProfile.name}</li>
-        <li class="list-group-item">Age: ${currentProfile.age}</li>
+        <li class="list-group-item">Age: ${currentProfile.profile}</li>
+        <li class="list-group-item">Skills: ${currentProfile.skills}</li>
         <li class="list-group-item">Location: ${currentProfile.location}</li>
-        <li class="list-group-item">Preference: ${currentProfile.gender} looking for ${currentProfile.lookingfor}</li>
       </ul>
     `;
 
