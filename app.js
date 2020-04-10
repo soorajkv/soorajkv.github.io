@@ -2,7 +2,7 @@ const data = [
   {
     name: 'Sooraj KV',
     profile: 'Developer',
-    skills: 'AEM,Java,Js,React,AWS',
+    skills: 'AEM, Java, Js, React, Bootstrap, AWS',
     location: 'Melbourne Australia',
     image: 'images/sooraj.JPG'
   }
@@ -13,9 +13,6 @@ const profiles = profileIterator(data);
 // Call first profile
 nextProfile();
 
-// Next Event
-document.getElementById('next').addEventListener('click', nextProfile);
-
 // Next Profile Display
 function nextProfile() {
   const currentProfile = profiles.next().value;
@@ -24,10 +21,11 @@ function nextProfile() {
     document.getElementById('profileDisplay').innerHTML = `
       <ul class="list-group">
         <li class="list-group-item">Name: ${currentProfile.name}</li>
-        <li class="list-group-item">Age: ${currentProfile.profile}</li>
+        <li class="list-group-item">Role: ${currentProfile.profile}</li>
         <li class="list-group-item">Skills: ${currentProfile.skills}</li>
         <li class="list-group-item">Location: ${currentProfile.location}</li>
       </ul>
+      <a href="#" type="button" class="btn btn-primary btn-block mt-3" data-toggle="modal" data-target="#exampleModalCenter">View full Profile</a>
     `;
 
     document.getElementById('imageDisplay').innerHTML = `<img src="${currentProfile.image}">`;
