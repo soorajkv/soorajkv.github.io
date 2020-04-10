@@ -5,7 +5,7 @@ const data = [
     skills: 'AEM,Java,Js,React,AWS',
     location: 'Melbourne Australia',
     image: 'assets/sooraj.jpg'
-  
+  }
 ];
 
 const profiles = profileIterator(data);
