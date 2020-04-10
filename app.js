@@ -4,7 +4,7 @@ const data = [
     profile: 'Developer',
     skills: 'AEM,Java,Js,React,AWS',
     location: 'Melbourne Australia',
-    image: 'images/sooraj.jpg'
+    image: 'images/sooraj.JPG'
   }
 ];
 
